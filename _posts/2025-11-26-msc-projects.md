@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summer projects for MSc students (2025/26) 
+title: Summer MSc project (2025/26): heatwaves and vaccine coverage 
 subtitle: 
 gh-repo: kath-o-reilly/github.io
 gh-badge: 
