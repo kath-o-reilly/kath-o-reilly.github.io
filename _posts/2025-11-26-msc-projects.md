@@ -1,100 +1,45 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: Summer projects for MSc students (2025/26) 
+subtitle: 
+gh-repo: kath-o-reilly/github.io
+gh-badge: 
+tags: projects
 comments: true
 mathjax: true
-author: Bill Smith
+author: Kath O'Reilly
 ---
 
-{: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+#{: .box-success}
 
-**Here is some bold text**
 
-## Here is a secondary heading
+# Examining the Timeliness of Routine Vaccination During Heatwaves
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+## Research question and overall aims
+The analysis seeks to determine whether children scheduled for routine vaccination during heatwave periods experience higher rates of delayed vaccination compared to those scheduled during non-heatwave periods.
+1.  To scope publicly available datasets (ie. MICS and DHS) for time periods where heatwaves had been reported in country
+2.  To define space-time windows when heat waves are occurring based on meteorological data
+3.  To identify appropriate analysis plan to examine the effect of heatwaves on the timeliness of vaccination, while accounting for confounding factors
+4.  To carry out preliminary analysis as planned in Obj 3.
 
-Here's a table:
+## Data to be used
+- Example cross-sectional data: Nigeria 2024 DHS (publicly available)
+- Satellite data from Nigeria, [ERA5](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download)
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+## Methodology to be implemented
+- Statistical analysis to account for “heatwave windows”, ie. distinct periods of time where temperature data indicate a heatwave in specific locations
+- Regression analysis, accounting for 
+- low numbers of “heatwave” observations
+- confounders such as distance to health facilities, maternal education, and rural/urban status.
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+## References
+- Short article describing heat waves in [Nigeria](https://www.carbonbrief.org/how-nigeria-is-reeling-from-extreme-heat-fuelled-by-climate-change/)
+- Imran H, Raja D, Grassly NC, Wadood MZ, Safdar RM, O'Reilly KM. Routine immunization in Pakistan: comparison of multiple data sources and identification of factors associated with vaccination. Int Health. 2018 Mar 1;10(2):84-91. doi: 10.1093/inthealth/ihx067. PMID: 29432552; PMCID: PMC5856161.
+- Note that ref below includes some detail about how to identify a heatwave window, among other [analyses]
+(https://www.imperial.ac.uk/media/imperial-college/grantham-institute/public/publications/institute-reports-and-analytical-notes/Climate-change-tripled-heat-related-deaths-in-early-summer-European-heatwave.pdf)
 
-How about a yummy crepe?
+### Data cleaning requirements
+- Some: DHS data will require exploration. ERA5 data will require interaction with the API to extract the appropriate data (using Python)
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
-
-It can also be centered!
-
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
-
-## Local URLs in project sites {#local-urls}
-
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
-
-![Crepe](/assets/img/crepe.jpg)
-
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
-
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
-
-<details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
-</details>
+### Software requirements
+- Analysis can be done using R or Python.
