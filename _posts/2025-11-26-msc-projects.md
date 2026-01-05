@@ -10,7 +10,7 @@ mathjax: true
 author: Kath O'Reilly
 ---
 
-#{: .box-success}
+\#{: .box-success}
 
 
 # Examining the Timeliness of Routine Vaccination During Heatwaves
@@ -35,8 +35,7 @@ The analysis seeks to determine whether children scheduled for routine vaccinati
 ## References
 - Short article describing heat waves in [Nigeria](https://www.carbonbrief.org/how-nigeria-is-reeling-from-extreme-heat-fuelled-by-climate-change/)
 - Imran H, Raja D, Grassly NC, Wadood MZ, Safdar RM, O'Reilly KM. Routine immunization in Pakistan: comparison of multiple data sources and identification of factors associated with vaccination. Int Health. 2018 Mar 1;10(2):84-91. doi: 10.1093/inthealth/ihx067. PMID: 29432552; PMCID: PMC5856161.
-- Note that ref below includes some detail about how to identify a heatwave window, among other [analyses]
-(https://www.imperial.ac.uk/media/imperial-college/grantham-institute/public/publications/institute-reports-and-analytical-notes/Climate-change-tripled-heat-related-deaths-in-early-summer-European-heatwave.pdf)
+- Note that ref below includes some detail about how to identify a heatwave window, among other [analyses](https://www.imperial.ac.uk/media/imperial-college/grantham-institute/public/publications/institute-reports-and-analytical-notes/Climate-change-tripled-heat-related-deaths-in-early-summer-European-heatwave.pdf)
 
 ### Data cleaning requirements
 - Some: DHS data will require exploration. ERA5 data will require interaction with the API to extract the appropriate data (using Python)
