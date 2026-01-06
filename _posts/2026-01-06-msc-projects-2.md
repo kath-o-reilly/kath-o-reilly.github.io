@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summer MSc project (2025/26): seasonality of movements and role in infectious disease transmission 
+title: Summer MSc project (2025/26) seasonality of movements and role in infectious disease transmission 
 subtitle: 
 gh-repo: kath-o-reilly/github.io
 gh-badge: 
