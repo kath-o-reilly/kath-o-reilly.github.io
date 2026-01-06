@@ -10,8 +10,6 @@ mathjax: true
 author: Kath O'Reilly
 ---
 
-\#{: .box-success}
-
 
 # Seasonality of movements and role in infectious disease transmission 
 

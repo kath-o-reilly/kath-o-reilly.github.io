@@ -10,7 +10,6 @@ mathjax: true
 author: Kath O'Reilly
 ---
 
-\#{: .box-success}
 
 
 # Examining the Timeliness of Routine Vaccination During Heatwaves
